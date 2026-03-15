@@ -1,0 +1,10 @@
+[project]
+name = "hackathon_26_drt_data_processing.dataset_processing"
+version = "0.1.0"
+description = "This is a repo, to process provided and online grabbed data of Durham Regional Transit. To process it and find a connection between routes that are high stress and buses that get the most load based on maintenance logs, riders feedback and presto card taps on different stops."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.3.3",
+    "python-dotenv>=1.0.0",
+]
