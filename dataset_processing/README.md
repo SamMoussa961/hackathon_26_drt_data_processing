@@ -1,6 +1,6 @@
-# DRT Fleet Equalizer — Data Pipeline
+# Lifecycle Cost-Balanced Bus Operations  (LCBO) — Data Pipeline
 
-`build_db.py` is the data pipeline for the **DRT Fleet Equalizer** hackathon project. It ingests five heterogeneous data sources, computes fleet wear and route stress scores, applies a constraint-aware swap recommendation algorithm, and writes all results to a local SQLite database consumed by the macOS dashboard.
+`build_db.py` is the data pipeline for the **Lifecycle Cost-Balanced Bus Operations  (LCBO)** hackathon project. It ingests five heterogeneous data sources, computes fleet wear and route stress scores, applies a constraint-aware swap recommendation algorithm, and writes all results to a local SQLite database consumed by the macOS dashboard.
 
 ---
 
@@ -293,3 +293,11 @@ cp drt_fleet.db \
 - **Shape distance averaging.** Routes with inbound/outbound or express variants have multiple `shape_id` entries. The mean distance is used. A `max` approach could be substituted if variant lengths differ significantly (e.g. express vs local on the same route number).
 - **Estimated savings are illustrative.** The `$500/10-point` figure is a placeholder chosen to give stakeholders an order-of-magnitude signal for prioritisation, not for budget planning. The Presentation view exposes this as an editable input so judges and stakeholders can substitute their own figure.
 - **Ghost route exclusion.** Routes with `stress_score == 0` and no bus assignments are excluded from swap eligibility to prevent trivially "easy" targets from dominating recommendations.
+
+---
+
+**Durham College Hackathon 2026 — Durham Region Transit Challenge**
+
+---
+
+*“I’ve used Claude Code to support code generation, idea organization, grammar refinement, and clarity improvement only. All final content and analysis were created by me."*

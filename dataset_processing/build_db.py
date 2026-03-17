@@ -1,5 +1,5 @@
 """
-DRT Fleet Equalizer — Step 1: Data Pipeline
+Lifecycle Cost-Balanced Bus Operations  (LCBO) — Step 1: Data Pipeline
 Builds drt_fleet.db (SQLite) with fleet wear scores, route stress scores, and swap recommendations.
 """
 
